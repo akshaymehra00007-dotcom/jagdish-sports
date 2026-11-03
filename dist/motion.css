@@ -1,0 +1,61 @@
+/* Fire is clipped inside the letters; motion never obscures controls or copy. */
+.fire-text{display:inline-block;color:#ffb54b;-webkit-text-stroke:0;background-color:#e84712;background-image:radial-gradient(ellipse at 40% 100%,#fff6b3 0 12%,#ffd65c 19%,#ff851f 32%,transparent 58%),radial-gradient(ellipse at 70% 90%,#fff4b0 0 8%,#ffc445 20%,#f65c12 34%,transparent 60%),radial-gradient(ellipse at 50% 110%,#ffe579 0 22%,#ff8420 42%,#c92b0a 67%,#521506 95%);background-size:70px 135%,100px 160%,100% 170%;background-position:0 100%,35px 100%,0 100%;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 9px #ff6a1638)}
+.motion-enabled .fire-text{animation:fire-current 3.6s linear infinite,fire-heat 5s ease-in-out infinite}
+.motion-enabled .hero h1>span{animation:arena-title 1.15s cubic-bezier(.16,1,.3,1) both}
+.motion-enabled .hero h1>span:nth-child(2){animation-delay:.17s}
+.motion-enabled .hero .eyebrow{animation:arena-caption .9s .05s both}
+.motion-enabled .hero-copy{animation:arena-caption 1s .48s both}
+.motion-enabled .hero-actions{animation:arena-caption 1s .65s both}
+.motion-enabled .hero-side{animation:arena-side 1.2s .8s both}
+.motion-enabled .hero-bottom{animation:arena-caption 1s .85s both}
+.motion-enabled .hero-bg{translate:0 var(--hero-shift,0px)}
+.motion-enabled .hero .eyebrow i{animation:signal-glow 3s ease-in-out infinite}
+.motion-enabled .scroll-cue{animation:scroll-invite 3s ease-in-out 2s infinite}
+.motion-ready .reveal{transition:opacity .9s ease,transform 1s cubic-bezier(.16,1,.3,1),clip-path 1.15s cubic-bezier(.16,1,.3,1);transition-delay:var(--reveal-delay,0ms)}
+.motion-ready .academy-image.reveal{clip-path:inset(0 12% 0 0)}
+.motion-ready .academy-image.reveal.visible{clip-path:inset(0)}
+.motion-ready .academy-image img{transform:scale(1.065);transition:transform 1.6s cubic-bezier(.16,1,.3,1)}
+.motion-ready .academy-image.visible img{transform:scale(1)}
+.motion-ready .section-top{position:relative;border-bottom-color:transparent}
+.motion-ready .section-top:after{content:'';position:absolute;inset:auto 0 -1px;height:1px;background:var(--line);transform:scaleX(0);transform-origin:left;transition:transform 1.3s cubic-bezier(.16,1,.3,1)}
+.motion-ready .section-top.visible:after{transform:scaleX(1)}
+.motion-enabled h2 em{display:inline-block}
+.motion-enabled h2.visible em,.motion-enabled .visible h2 em{animation:heading-emphasis 1.1s .12s cubic-bezier(.16,1,.3,1) both}
+.motion-enabled .enquiry-form.visible .field{animation:arena-caption .7s var(--field-delay,0ms) both}
+.field input,.field textarea,.field select{transition:border-color .25s,background .25s,box-shadow .25s}
+.field input:focus,.field textarea:focus,.field select:focus{background:#24201f;box-shadow:0 0 0 3px #e3383114}
+.button,.nav-cta{position:relative;overflow:hidden;isolation:isolate;transition:transform .35s cubic-bezier(.2,.8,.2,1),background .3s,box-shadow .3s}
+.button:before,.nav-cta:before{content:'';position:absolute;inset:-100% auto -100% -70%;width:30%;background:linear-gradient(90deg,transparent,#ffffff26,transparent);transform:skewX(-20deg);pointer-events:none}
+.button:hover:before,.nav-cta:hover:before{animation:button-sheen .8s ease both}
+.button>span,.nav-cta>span{transition:transform .3s}
+.button:hover>span,.nav-cta:hover>span{transform:translate(3px,-3px)}
+.motion-enabled .button,.motion-enabled .nav-cta{transform:translate3d(var(--mx,0px),var(--my,0px),0)}
+.motion-enabled .button:hover,.motion-enabled .nav-cta:hover{box-shadow:0 8px 30px #e3383128}
+.motion-enabled .pillar.visible{transform:perspective(900px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transition:transform .45s ease,background .4s,opacity .9s}
+.pillar .line-icon{transition:transform .65s cubic-bezier(.16,1,.3,1),color .4s}
+.pillar:hover .line-icon{transform:translateY(-5px) rotate(-8deg);color:#ffd0bd}
+.gallery-item b{transition:background .3s,transform .4s,color .3s}
+.gallery-item:hover b{background:var(--red);transform:rotate(45deg);color:#fff}
+.gallery-item>span{transition:translate .4s}
+.gallery-item:hover>span{translate:0 -3px}
+.faq-list summary span{transition:transform .35s ease}
+.motion-enabled .faq-list details[open] p{animation:faq-unfold .45s ease both}
+.motion-enabled dialog[open]{animation:lightbox-enter .4s cubic-bezier(.16,1,.3,1) both}
+.motion-enabled dialog[open]::backdrop{animation:backdrop-enter .35s ease both}
+.motion-enabled nav.open a{animation:arena-caption .4s both}
+.motion-enabled nav.open a:nth-child(2){animation-delay:.05s}.motion-enabled nav.open a:nth-child(3){animation-delay:.1s}.motion-enabled nav.open a:nth-child(4){animation-delay:.15s}
+.ticker:hover>div{animation-play-state:paused}
+@keyframes fire-current{0%{background-position:0 100%,35px 115%,0 100%}50%{background-position:35px 20%,-10px 40%,0 55%}100%{background-position:70px 100%,-65px 115%,0 100%}}
+@keyframes fire-heat{0%,100%{filter:drop-shadow(0 0 8px #ff621635)}50%{filter:drop-shadow(0 0 14px #ff861b65)}}
+@keyframes arena-title{from{opacity:0;clip-path:inset(100% 0 -15%);transform:translateY(45px) skewY(2deg)}to{opacity:1;clip-path:inset(-15%);transform:translateY(0) skewY(0)}}
+@keyframes arena-caption{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+@keyframes arena-side{from{opacity:0}to{opacity:1}}
+@keyframes heading-emphasis{from{opacity:.3;clip-path:inset(0 100% 0 0);translate:12px 0}to{opacity:1;clip-path:inset(0);translate:0 0}}
+@keyframes signal-glow{0%,100%{box-shadow:0 0 0 0 #ef403840}50%{box-shadow:0 0 0 5px #ef403800}}
+@keyframes scroll-invite{0%,65%,100%{translate:0 0}80%{translate:0 5px}}
+@keyframes button-sheen{from{left:-70%}to{left:150%}}
+@keyframes faq-unfold{from{opacity:0;translate:0 -7px}to{opacity:1;translate:0 0}}
+@keyframes lightbox-enter{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes backdrop-enter{from{opacity:0}to{opacity:1}}
+@media(max-width:650px){.fire-text{background-size:46px 135%,65px 160%,100% 170%}.motion-enabled .fire-text{animation-duration:4.5s,6s}}
+@media(prefers-reduced-motion:reduce){.fire-text{animation:none;filter:none}.hero-bg{translate:0 0}.button,.nav-cta,.pillar{transform:none!important}.button:before,.nav-cta:before{display:none}.motion-ready .academy-image.reveal{clip-path:none}.motion-ready .academy-image img{transform:none}.motion-ready .section-top:after{transform:none}.motion-ready .reveal{opacity:1;transform:none;transition:none}.field input,.field textarea,.field select{transition:none}}
