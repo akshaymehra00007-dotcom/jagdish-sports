@@ -1,0 +1,11 @@
+{
+  "name": "jagdish-sports-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Crimson Arena website for Jagdish Sports Academy, Bharatpur",
+  "scripts": {
+    "dev": "node preview.cjs",
+    "start": "node preview.cjs",
+    "check": "node --check dist/app.js"
+  }
+}

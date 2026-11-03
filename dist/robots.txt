@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jagdish-sports-academy-bharatpur.akshay-theagencyfoun.chatgpt.site/sitemap.xml
