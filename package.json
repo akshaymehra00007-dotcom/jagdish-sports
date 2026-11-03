@@ -1,8 +1,8 @@
 {
-  "name": "jagdish-sports-academy",
+  "name": "dragon-warriors-martial-arts-academy",
   "version": "1.0.0",
   "private": true,
-  "description": "Crimson Arena website for Jagdish Sports Academy, Bharatpur",
+  "description": "Crimson Arena website for Dragon Warriors Martial Arts Academy, Bharatpur",
   "scripts": {
     "dev": "node preview.cjs",
     "start": "node preview.cjs",

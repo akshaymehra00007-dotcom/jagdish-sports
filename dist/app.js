@@ -7,7 +7,7 @@ function prepareEnquiry(){
   const phone=document.querySelector('#enquiry-phone').value.trim();
   const interest=document.querySelector('#enquiry-interest').value;
   const message=document.querySelector('#enquiry-message').value.trim();
-  document.querySelector('#enquiry-text').value=`Hello Jagdish Sports Academy,\n\nName: ${name}\nMobile: ${phone}\nEnquiry: ${interest}${message?`\nMessage: ${message}`:''}\n\nPlease share the relevant training details. Thank you.`;
+  document.querySelector('#enquiry-text').value=`Hello Dragon Warriors Martial Arts Academy,\n\nName: ${name}\nMobile: ${phone}\nEnquiry: ${interest}${message?`\nMessage: ${message}`:''}\n\nPlease share the relevant training details. Thank you.`;
 }
 enquiryForm.addEventListener('input',()=>{document.querySelector('#enquiry-name').setCustomValidity('');document.querySelector('#enquiry-status').textContent='';prepareEnquiry()});
 enquiryForm.addEventListener('change',prepareEnquiry);
