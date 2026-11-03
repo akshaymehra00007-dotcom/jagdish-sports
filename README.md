@@ -25,3 +25,7 @@ The compact form validates name and a 10-digit Indian mobile number, then opens 
 Contact details, location, rating snapshot and original academy photos were taken from the supplied Google Maps business listing. The site includes an interactive Google map, a directions link, a gallery with keyboard-accessible lightbox, and mobile navigation. Confirm current fees, timings and suitability with the academy; these are not invented on the website.
 
 Motion respects reduced-motion preferences. Source is plain HTML, CSS, JavaScript and SVG.
+
+## Hero stock film
+
+Cinematic martial arts stock footage by cottonbro studio, Pexels asset 8038157: https://www.pexels.com/video/girl-practicing-taekwondo-8038157/ . Used under the Pexels license (https://www.pexels.com/license/). This is illustrative stock footage, not a recording of the academy. The hero streams 4096×2160 UHD on desktop and a lighter 1366×720 source on mobile from the Pexels CDN. The academy photograph remains the fallback. Reduced-motion and data-saving preferences disable automatic playback. Visitors can pause or play the film.
