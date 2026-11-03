@@ -7,3 +7,8 @@
 .brand{font-size:24px;letter-spacing:.5px}.brand img{width:54px;height:54px}.brand small{font-size:8px;letter-spacing:1.8px}.image-tag{font-size:38px}.academy-image img{object-position:center 48%}.gallery-item.wide img{object-position:43% center}.location address{max-width:330px}.film-credit{white-space:nowrap}
 @media(max-width:1000px) and (min-width:651px){header nav{gap:16px}.brand{font-size:21px}.brand small{font-size:7px;letter-spacing:1.3px}.brand img{width:46px;height:46px}.nav-cta{font-size:9px;padding:13px}}
 @media(max-width:650px){.brand{font-size:22px;gap:9px}.brand img{width:43px;height:43px}.brand small{font-size:7px;letter-spacing:1.2px}header .nav-cta{display:none}header .menu{margin-left:auto}.intro .section-top>span{max-width:155px;font-size:8px;line-height:1.8}.gallery-item>span{font-size:8px;letter-spacing:.7px}.hero-side.left{font-size:5.5px;letter-spacing:1px}.academy-image img{object-position:center center}.location address{max-width:100%}}
+
+/* Restored original badge, supplied and approved by the academy. */
+.brand img{width:64px;height:64px;object-fit:contain;flex-shrink:0}
+@media(max-width:1000px) and (min-width:651px){.brand img{width:52px;height:52px}}
+@media(max-width:650px){.brand img{width:48px;height:48px}}
